@@ -14,5 +14,6 @@ ENV JENKINS_HOME /jenkins
 
 EXPOSE 8080
 ENV PORT 2375
+ENV DOCKER_HOST tcp://127.0.0.1:2375
 ADD startup.sh startup.sh
 CMD ["./startup.sh"]
